@@ -10,21 +10,6 @@ body {
   color: #fef2bf;
 }
 
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-}
-
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
-
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -51,33 +36,38 @@ body {
   background-color: grey;
 }
 
-@media (max-width: 1280px) {
-  .container {
-    display: block;
-    width: 40%;
-    margin: auto;
-  }
+/* Base Styles - for mobile (default) */
+.container {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  margin: 15px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+/* Tablet: 756px and up */
+@media (min-width: 756px) {
   .btn {
-    margin: 15px;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    border: 10px solid black;
-    border-radius: 20%;
+    height: 100px;
+    width: 100px;
   }
 }
-@media (max-width: 756px) {
+
+/* Desktop: 1280px and up */
+@media (min-width: 1280px) {
   .container {
-    display: block;
     width: 40%;
-    margin: auto;
   }
+
   .btn {
-    margin: 15px;
-    display: inline-block;
-    height: 80px;
-    width: 80px;
-    border: 10px solid black;
-    border-radius: 20%;
+    height: 150px;
+    width: 150px;
   }
 }
